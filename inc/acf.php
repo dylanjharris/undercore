@@ -36,19 +36,21 @@ if( function_exists('acf_add_options_page') ) {
   ACF OPTION: WooCommerce Cart Fragments
 ----------------------------------------------*/
 if ( ! function_exists('undercore_disable_cart_fragments') ) {
-    function undercore_disable_cart_fragments() {        
+    function undercore_disable_cart_fragments() {
         if ( get_option( 'options_uc_disable_cart_fragments' ) ) {
             $cart_fragments_status = get_option( 'options_uc_disable_cart_fragments' );
             if ( $cart_fragments_status === 'disabled' ) {
                 // disable site wide
-                add_action( 'wp_print_scripts', 'undercore_disable_cart_fragments', 100 );
+                wp_dequeue_script( 'wc-cart-fragments' );
+                return true;
             } else if ( $cart_fragments_status === 'woo_only' && is_woocommerce() ) {
                 // disable non-woocommerce only
-                add_action( 'wp_print_scripts', 'undercore_disable_cart_fragments', 100 );
+                wp_dequeue_script( 'wc-cart-fragments' );
+                return true;
             }
         }
     }
-    
+    add_action( 'wp_print_scripts', 'undercore_disable_cart_fragments', 100 );
 }
 
 
