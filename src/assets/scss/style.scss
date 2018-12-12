@@ -104,3 +104,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Shame
+--------------------------------------------------------------*/
+
+.main-navigation li {
+	margin-right: 1rem;
+}
+
