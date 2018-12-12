@@ -43,7 +43,7 @@ if ( ! function_exists('undercore_disable_cart_fragments') ) {
                 // disable site wide
                 wp_dequeue_script( 'wc-cart-fragments' );
                 return true;
-            } else if ( $cart_fragments_status === 'woo_only' && is_woocommerce() ) {
+            } else if ( $cart_fragments_status === 'woo_only' && ! is_woocommerce() ) {
                 // disable non-woocommerce only
                 wp_dequeue_script( 'wc-cart-fragments' );
                 return true;
