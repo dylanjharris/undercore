@@ -120,7 +120,9 @@ add_action( 'widgets_init', 'undercore_widgets_init' );
  * Enqueue scripts and styles.
  */
 function undercore_scripts() {
-	wp_enqueue_style( 'undercore-style', get_stylesheet_uri() );
+	$version = rand(10,1000);
+
+	wp_enqueue_style( 'undercore-style', get_stylesheet_uri() . '/dist/assets/css/style.css', $version, 'all');
 
 	wp_enqueue_script( 'undercore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
