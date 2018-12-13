@@ -92,12 +92,42 @@ if ( ! function_exists( 'undercore_setup' ) ) :
 		$editor_color_palette = undercore_gutenberg_editor_color_palette();
 		add_theme_support( 'editor-color-palette', $editor_color_palette );
 
+
+		/**
+		 *                                                  djh Dec 13, 2018
+		 * Add custom font sizes to the editor.
+		 * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/
+		 */
+		$editor_font_sizes = undercore_gutenberg_editor_font_sizes();
+		add_theme_support( 'editor-font-sizes', $editor_font_sizes );
+		// turn off custom font sizes by default
+		if ( ! get_option( 'options_uc_allow_custom_font_sizes' ) ) {
+			add_theme_support('disable-custom-font-sizes');
+		}
+
+
 		/**
 		 *                                                  djh Dec 13, 2018
 		 * Add support for responsive embeds.
 		 *
 		 */
 		add_theme_support( 'responsive-embeds' );
+
+
+		/**
+		 *                                                  djh Dec 13, 2018
+		 * Add support for Block Styles.
+		 * @todo set css for block styles
+		 */
+		add_theme_support( 'wp-block-styles' );
+
+
+		/**
+		 *                                                  djh Dec 13, 2018
+		 * Add support for full/wide-align images.
+		 * @todo set css for align-wide images
+		 */ 
+		add_theme_support( 'align-wide' );
 
 
 	}

@@ -87,6 +87,93 @@ if ( ! function_exists('undercore_gutenberg_editor_color_palette') ) {
 
 
 
+/*----------------------------------------------djh Dec 13, 2018
+  Get editor_font_sizes from Theme Settings
+----------------------------------------------*/
+if ( ! function_exists('undercore_gutenberg_editor_font_sizes') ) {
+    function undercore_gutenberg_editor_font_sizes() {
+    	// start with defaults
+    	$editor_font_sizes = array(
+		    array(
+		        'name' => __( 'small', 'undercore' ),
+		        'shortName' => __( 'S', 'undercore' ),
+		        'size' => 13,
+		        'slug' => 'small'
+		    ),
+		    array(
+		        'name' => __( 'regular', 'undercore' ),
+		        'shortName' => __( 'M (H4)', 'undercore' ),
+		        'size' => 16,
+		        'slug' => 'regular'
+		    ),
+		    array(
+		        'name' => __( 'large', 'undercore' ),
+		        'shortName' => __( 'L (H3)', 'undercore' ),
+		        'size' => 20,
+		        'slug' => 'large'
+		    ),
+		    array(
+		        'name' => __( 'h2', 'undercore' ),
+		        'shortName' => __( 'H2', 'undercore' ),
+		        'size' => 26,
+		        'slug' => 'h2'
+		    ),
+		    array(
+		        'name' => __( 'h1', 'undercore' ),
+		        'shortName' => __( 'H1', 'undercore' ),
+		        'size' => 33,
+		        'slug' => 'h1'
+		    ),
+		    array(
+		        'name' => __( 'hero', 'undercore' ),
+		        'shortName' => __( 'Hero', 'undercore' ),
+		        'size' => 42,
+		        'slug' => 'hero'
+		    )
+		);
+
+    	// get custom color palette settings (if they exist)
+		if ( get_option( 'options_uc_editor_font_sizes' ) ) { 
+			// flush the array
+			$editor_font_sizes = array();
+			// get custom color settings as an array of textarea lines
+			$custom_font_sizes = preg_split("/\r\n|\n|\r/", get_option( 'options_uc_editor_font_sizes' ));
+			// recreate array with color settings
+			if ( is_array( $custom_font_sizes ) ) {
+				foreach ($custom_font_sizes as $num => $row) {
+					$font_size_data = explode(',', trim($row));
+					// if there are more or fewer than 4 pieces, skip it
+					if ( count( $font_size_data ) !== 4 ) {
+						continue;
+					}
+
+					$fs_name      = preg_replace('/[^\w-]/', '', $font_size_data[0]);
+					$fs_shortName = esc_html($font_size_data[1]);
+					$fs_size      = intval($font_size_data[2]);
+					$fs_slug      = preg_replace('/[^\w-]/', '', $font_size_data[3]);
+
+					$editor_font_sizes[] = array(
+				        'name' => __( $fs_name, 'undercore' ),
+				        'shortName' => __( $fs_shortName, 'undercore' ),
+				        'size' => $fs_size,
+				        'slug' => $fs_slug
+					);
+
+				}
+			}
+		}
+    	return $editor_font_sizes;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
