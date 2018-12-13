@@ -170,10 +170,12 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
-
 /**
- * Load Advanced Custom Fields file. ///// DJH Dec 12, 2018 
+ * Load Advanced Custom Fields file. DJH Dec 12, 2018 
  */
-if( function_exists('acf_add_options_page') ) {
+if ( function_exists('acf_add_options_page') ) {
     require get_template_directory() . '/inc/acf.php';
 }
+
+
+

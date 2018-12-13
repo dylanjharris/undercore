@@ -59,12 +59,3 @@ if ( ! function_exists('undercore_disable_cart_fragments') ) {
 
 
 
-
-
-
-
-
-
-
-
-
