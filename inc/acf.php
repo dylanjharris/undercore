@@ -60,10 +60,12 @@ if ( ! function_exists('undercore_disable_cart_fragments') ) {
 if ( ! function_exists('undercore_wp_nav_menu_args') ) {
     function undercore_wp_nav_menu_args( $menu = 'primary' ) {
         // defaults
+        $items_wrap = '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>';
         $args = array(
             'theme_location' => 'menu-1',
             'menu_id'        => 'primary-menu',
-            'menu_class'     => 'menu align-right'
+            'menu_class'     => 'dropdown menu',
+            'items_wrap'     => $items_wrap
         );
 
         // if ( $menu === 'primary' ) {
