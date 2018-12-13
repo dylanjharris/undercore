@@ -30,14 +30,24 @@ if ( ! function_exists('undercore_gutenberg_editor_color_palette') ) {
 		        'color' => '#3adb76',
 		    ),
 		    array(
-		        'name'  => __( 'Warning color', 'undercore' ),
+		        'name'  => __( 'Warning Color', 'undercore' ),
 		        'slug'  => 'warning',
 		        'color' => '#ffae00',
 		    ),
 		    array(
-		        'name'  => __( 'Alert color', 'undercore' ),
+		        'name'  => __( 'Alert Color', 'undercore' ),
 		        'slug'  => 'alert',
 		        'color' => '#cc4b37',
+		    ),
+		    array(
+		        'name'  => __( 'Simple White', 'undercore' ),
+		        'slug'  => 'white',
+		        'color' => '#ffffff',
+		    ),
+		    array(
+		        'name'  => __( 'Simple Black', 'undercore' ),
+		        'slug'  => 'black',
+		        'color' => '#000000',
 		    )
 		);
     	// get custom color palette settings (if they exist)
@@ -55,8 +65,8 @@ if ( ! function_exists('undercore_gutenberg_editor_color_palette') ) {
 					$color_data = explode(' : ', $row);
 					$color_hex  = substr($color_data[0], -6);
 
+					// if this is not a hex value, skip the row
 					if ( ! ctype_xdigit( $color_hex ) && ! strlen( $color_hex ) == 6 ) {
-						// if this is not a hex value, skip the row
 					    continue;
 					}
 
