@@ -64,7 +64,7 @@ if ( ! function_exists('undercore_wp_nav_menu_args') ) {
             'theme_location' => 'menu-1',
             'menu_id'        => 'primary-menu',
             'menu_class'     => 'menu align-right'
-        )
+        );
 
         // if ( $menu === 'primary' ) {
         //     $args = array(
