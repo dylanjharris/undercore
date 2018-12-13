@@ -2,10 +2,18 @@
 
 
 /*----------------------------------------------djh Dec 13, 2018
+  NOTES
+  https://www.advancedcustomfields.com/blog/acf-5-8-introducing-acf-blocks-for-gutenberg/
+----------------------------------------------*/
+if( !class_exists('acf') )
+
+
+/*----------------------------------------------djh Dec 13, 2018
   Get editor_color_palette from Theme Settings
 ----------------------------------------------*/
 if ( ! function_exists('undercore_gutenberg_editor_color_palette') ) {
     function undercore_gutenberg_editor_color_palette() {
+    	// start with Foundation defaults
     	$editor_color_palette = array(
 		    array(
 		        'name' => __( 'Primary Color', 'undercore' ),
@@ -33,6 +41,8 @@ if ( ! function_exists('undercore_gutenberg_editor_color_palette') ) {
 		        'color' => '#cc4b37',
 		    )
 		);
+		
+
     	return $editor_color_palette;
     }
 }

@@ -47,6 +47,8 @@
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'undercore' ); ?></button>
 			<?php
+				// https://developer.wordpress.org/reference/functions/wp_nav_menu/
+				// https://wordpress.stackexchange.com/questions/19245/any-docs-for-wp-nav-menus-items-wrap-argument
 				$nav_menu_args = undercore_wp_nav_menu_args('primary');
 				wp_nav_menu( $nav_menu_args );
 			?>

@@ -55,6 +55,7 @@ if ( ! function_exists('undercore_disable_cart_fragments') ) {
 
 /*----------------------------------------------djh Dec 13, 2018
   Get nav_menu args from Theme Settings
+  https://foundation.zurb.com/sites/docs/dropdown-menu.html
 ----------------------------------------------*/
 if ( ! function_exists('undercore_wp_nav_menu_args') ) {
     function undercore_wp_nav_menu_args( $menu = 'primary' ) {

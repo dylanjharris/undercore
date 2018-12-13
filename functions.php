@@ -83,8 +83,6 @@ if ( ! function_exists( 'undercore_setup' ) ) :
 			'flex-height' => true,
 		) );
 
-
-
 		/**
 		 * Add custom color palette to the editor.     DJH Dec 13, 2018
 		 * Uses default Foundation 6 colors, or custom Theme Settings
@@ -185,6 +183,12 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Gutenberg customizations.     DJH Dec 13, 2018
+ */
+require get_template_directory() . '/inc/gutenberg.php';
+
 
 /**
  * Load Jetpack compatibility file.
