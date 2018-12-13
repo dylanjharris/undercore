@@ -54,6 +54,29 @@ if ( ! function_exists('undercore_disable_cart_fragments') ) {
 }
 
 
+/*----------------------------------------------djh Dec 13, 2018
+  Get nav_menu args from Theme Settings
+----------------------------------------------*/
+if ( ! function_exists('undercore_wp_nav_menu_args') ) {
+    function undercore_wp_nav_menu_args( $menu = 'primary' ) {
+        // defaults
+        $args = array(
+            'theme_location' => 'menu-1',
+            'menu_id'        => 'primary-menu',
+            'menu_class'     => 'menu align-right'
+        )
+
+        // if ( $menu === 'primary' ) {
+        //     $args = array(
+        //         'theme_location' => 'menu-1',
+        //         'menu_id'        => 'primary-menu',
+        //         'menu_class'     => 'menu align-right'
+        //     )
+        // }
+
+        return $args;
+    }
+}
 
 
 

@@ -47,11 +47,8 @@
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'undercore' ); ?></button>
 			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-				// 'menu_class'     => 'menu align-right'
-			) );
+				$nav_menu_args = undercore_wp_nav_menu_args('primary');
+				wp_nav_menu( $nav_menu_args );
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
