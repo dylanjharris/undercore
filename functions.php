@@ -143,7 +143,7 @@ function undercore_scripts() {
 
 	wp_enqueue_style( 'undercore-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'undercore-styles', get_template_directory_uri() . '/dist/assets/css/style.css', array(), $version, 'all');
+	wp_enqueue_style( 'undercore-styles', get_template_directory_uri() . '/dist/assets/css/styles.css', array(), $version, 'all');
 
 	wp_enqueue_script( 'undercore-navigation', get_template_directory_uri() . '/dist/assets/js/navigation.js', array(), $version, true );
 
