@@ -139,6 +139,12 @@ function undercore_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'undercore_scripts' );
 
+
+/**
+ * Helper functions.     DJH Dec 12, 2018
+ */
+require get_template_directory() . '/inc/helpers.php';
+
 /**
  * Implement the Custom Header feature.
  */
@@ -174,7 +180,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 /**
- * Load Advanced Custom Fields file. DJH Dec 12, 2018 
+ * Load Advanced Custom Fields compatibility file. DJH Dec 12, 2018 
  */
 if ( function_exists('acf_add_options_page') ) {
     require get_template_directory() . '/inc/acf.php';
