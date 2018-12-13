@@ -122,9 +122,12 @@ add_action( 'widgets_init', 'undercore_widgets_init' );
 function undercore_scripts() {
 	$version = rand(10,1000);
 
+	// wp_enqueue_style( string $handle, string $src = '', array $deps = array(), string|bool|null $ver = false, string $media = 'all' )
+	// wp_enqueue_script( string $handle, string $src = '', array $deps = array(), string|bool|null $ver = false, bool $in_footer = false )
+
 	wp_enqueue_style( 'undercore-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'undercore-style-2', get_template_directory_uri() . '/dist/assets/css/style.css', $version, 'all');
+	wp_enqueue_style( 'undercore-styles', get_template_directory_uri() . '/dist/assets/css/style.css', array(), $version, 'all');
 
 	wp_enqueue_script( 'undercore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
