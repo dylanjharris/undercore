@@ -118,6 +118,9 @@ add_action( 'widgets_init', 'undercore_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
+ * TODO: Split Foundation into separate css files, 
+ *       enqueue conditionally from Theme Settings > Site Configuration
+ *       Document Fast Velocity Minify settings for combination
  */
 function undercore_scripts() {
 	$version = undercore_current_version();

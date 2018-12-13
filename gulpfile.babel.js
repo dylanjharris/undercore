@@ -76,8 +76,9 @@ function copy() {
 
 // Compile Sass into CSS
 // In production, the CSS is compressed
+// TODO: migrate motion-ui from 1.2.2 to 2.0.3 https://github.com/zurb/motion-ui/releases
 function sass() {
-  return gulp.src(['src/assets/scss/style.scss','src/assets/scss/editor.scss','src/assets/scss/woocommerce.scss'])
+  return gulp.src(['src/assets/scss/styles.scss','src/assets/scss/editor.scss','src/assets/scss/woocommerce.scss'])
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sass
