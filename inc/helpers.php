@@ -19,7 +19,7 @@ if ( ! function_exists( 'undercore_current_version' ) ) :
 		// if any of the non-production strings are found in URL, 
 		// break cache with a rando, otherwise return version
 		if ( strpos_arr(home_url(), $non_prod_strings) !== false ) {
-			return '9.' . rand(1,9999);
+			return '999.' . rand(1,9999);
 		} else {
 			return $version;			
 		}

@@ -29,7 +29,9 @@ add_action( 'after_setup_theme', 'undercore_woocommerce_setup' );
  * @return void
  */
 function undercore_woocommerce_scripts() {
-	wp_enqueue_style( 'undercore-woocommerce-style', get_template_directory_uri() . '/dist/assets/css/woocommerce.css' );
+	$version = undercore_current_version();
+	// wp_enqueue_style( string $handle, string $src = '', array $deps = array(), string|bool|null $ver = false, string $media = 'all' )
+	wp_enqueue_style( 'undercore-woocommerce-style', get_template_directory_uri() . '/dist/assets/css/woocommerce.css', array(), $version);
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
