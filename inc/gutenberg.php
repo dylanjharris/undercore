@@ -53,6 +53,13 @@ if ( ! function_exists('undercore_gutenberg_editor_color_palette') ) {
 						continue;
 					}
 					$color_data = explode(' : ', $row);
+					$color_hex  = substr($color_data[0], -6);
+
+					if ( ! ctype_xdigit( $color_hex ) && ! strlen( $color_hex ) == 6 ) {
+						// if this is not a hex value, skip the row
+					    continue;
+					}
+
 					$color_hex  = '#' . substr($color_data[0], -6);
 					$color_slug = substr_replace($color_data[0],"", -7);
 					$color_label= trim($color_data[1]);
