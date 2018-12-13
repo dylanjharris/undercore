@@ -5,7 +5,6 @@
   NOTES
   https://www.advancedcustomfields.com/blog/acf-5-8-introducing-acf-blocks-for-gutenberg/
 ----------------------------------------------*/
-if( !class_exists('acf') )
 
 
 /*----------------------------------------------djh Dec 13, 2018
