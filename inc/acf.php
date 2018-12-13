@@ -53,7 +53,6 @@ if ( ! function_exists('undercore_disable_cart_fragments') ) {
     add_action( 'wp_print_scripts', 'undercore_disable_cart_fragments', 100 );
 }
 
-
 /*----------------------------------------------djh Dec 13, 2018
   Get nav_menu args from Theme Settings
 ----------------------------------------------*/
@@ -79,8 +78,5 @@ if ( ! function_exists('undercore_wp_nav_menu_args') ) {
         return $args;
     }
 }
-
-
-
 
 

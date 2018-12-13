@@ -14,6 +14,9 @@ if ( ! function_exists( 'undercore_setup' ) ) :
 	 * Note that this function is hooked into the after_setup_theme hook, which
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
+	 *
+	 * NOTE: Gutenberg add_theme_supports are defined here, but most functions are
+	 * in inc/gutenberg.php
 	 */
 	function undercore_setup() {
 		/*
@@ -79,6 +82,17 @@ if ( ! function_exists( 'undercore_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+
+
+		/**
+		 * Add custom color palette to the editor.     DJH Dec 13, 2018
+		 * Uses default Foundation 6 colors, or custom Theme Settings
+		 * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/
+		 */
+		$editor_color_palette = undercore_gutenberg_editor_color_palette();
+		add_theme_support( 'editor-color-palette', $editor_color_palette );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'undercore_setup' );
