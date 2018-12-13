@@ -134,6 +134,9 @@ function undercore_scripts() {
 
 	wp_enqueue_script( 'undercore-skip-link-focus-fix', get_template_directory_uri() . '/dist/assets/js/skip-link-focus-fix.js', array(), $version, true );
 
+	// Enqueue Foundation scripts
+	wp_enqueue_script( 'foundation-scripts', get_template_directory_uri() . '/dist/assets/js/app.js', array( 'jquery' ), $version, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
