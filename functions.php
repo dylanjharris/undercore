@@ -84,12 +84,21 @@ if ( ! function_exists( 'undercore_setup' ) ) :
 		) );
 
 		/**
-		 * Add custom color palette to the editor.     DJH Dec 13, 2018
+		 *                                                  djh Dec 13, 2018
+		 * Add custom color palette to the editor.
 		 * Uses default Foundation 6 colors, or custom Theme Settings
 		 * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/
 		 */
 		$editor_color_palette = undercore_gutenberg_editor_color_palette();
 		add_theme_support( 'editor-color-palette', $editor_color_palette );
+
+		/**
+		 *                                                  djh Dec 13, 2018
+		 * Add support for responsive embeds.
+		 *
+		 */
+		add_theme_support( 'responsive-embeds' );
+
 
 	}
 endif;
