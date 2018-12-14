@@ -60,3 +60,46 @@ if ( ! function_exists( 'strpos_arr' ) ) :
 	    return false;
 	}
 endif;
+
+
+
+/*----------------------------------------------djh Dec 13, 2018
+  Content Wrapper Classes
+----------------------------------------------*/
+if ( ! function_exists( 'undercore_content_wrapper_classes' ) ) :
+	function undercore_content_wrapper_classes( $id = '' ) {
+		if ( $id === '' ) {
+			return;
+		}
+		$classes = '';
+		if ( $id === 'content' ) {
+			$classes = 'site-content main-container';
+		} else if ( $id === 'primary' ) {
+			$classes = 'content-area main-grid';
+		} else if ( $id === 'main' ) {
+			$classes = 'site-main main-content';
+		}
+		echo $classes;
+	}
+endif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

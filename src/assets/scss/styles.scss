@@ -20,69 +20,69 @@
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+// @import "automattic/variables-site/variables-site";
+// @import "automattic/mixins/mixins-master";
 
 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import "normalize";
+// @import "automattic/normalize";
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@import "typography/typography";
+// @import "automattic/typography/typography";
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-@import "elements/elements";
+// @import "automattic/elements/elements";
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-@import "forms/forms";
+// @import "automattic/forms/forms";
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-@import "navigation/navigation";
+// @import "automattic/navigation/navigation";
 
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
-@import "modules/accessibility";
+// @import "automattic/modules/accessibility";
 
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-@import "modules/alignments";
+// @import "automattic/modules/alignments";
 
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-@import "modules/clearings";
+// @import "automattic/modules/clearings";
 
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-@import "site/secondary/widgets";
+// @import "automattic/site/secondary/widgets";
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@import "site/site";
+// @import "automattic/site/site";
 
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
-@import "modules/infinite-scroll";
+// @import "automattic/modules/infinite-scroll";
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-@import "media/media";
+// @import "automattic/media/media";
 
 
 
@@ -153,34 +153,28 @@
 */
 
 // Global
-@import "f/global/accessibility";
-@import "f/global/colors";
-@import "f/global/wp-admin";
-@import "f/global/wp-overrides";
-@import "f/global/gutenberg";
+@import "zurb/global/accessibility";
+@import "zurb/global/colors";
+@import "zurb/global/wp-admin";
+@import "zurb/global/wp-overrides";
+@import "zurb/global/gutenberg";
 
 // Modules
-@import "f/modules/navigation";
-@import "f/modules/content";
-@import "f/modules/footer";
-@import "f/modules/editor-style";
+@import "zurb/modules/navigation";
+@import "zurb/modules/content";
+@import "zurb/modules/footer";
+@import "zurb/modules/editor-style";
 
 // Components
-@import "f/components/buttons";
-@import "f/components/cards";
-@import "f/components/featured-image";
-@import "f/components/dividers";
-@import "f/components/links";
+@import "zurb/components/buttons";
+@import "zurb/components/cards";
+@import "zurb/components/featured-image";
+@import "zurb/components/dividers";
+@import "zurb/components/links";
 
 // Templates
-// @import "f/templates/front";
-@import "f/templates/kitchen-sink";
-
-
-
-
-
-
+// @import "zurb/templates/front";
+@import "zurb/templates/kitchen-sink";
 
 
 

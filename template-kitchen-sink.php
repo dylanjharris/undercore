@@ -14,8 +14,8 @@ Template Name: Kitchen Sink
 get_header();
 ?>
 
-	<div id="primary" class="content-area full-width">
-		<main id="main" class="main-wrap"><?php // class was site-main ?>
+	<div id="primary" class="<?php undercore_content_wrapper_classes('primary'); ?>">
+		<main id="main" class="<?php undercore_content_wrapper_classes('main'); ?>">
 
 		<?php
 		while ( have_posts() ) :

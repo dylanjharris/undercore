@@ -10,8 +10,8 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<section id="primary" class="<?php undercore_content_wrapper_classes('primary'); ?>">
+		<main id="main" class="<?php undercore_content_wrapper_classes('main'); ?>">
 
 		<?php if ( have_posts() ) : ?>
 
