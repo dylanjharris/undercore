@@ -71,7 +71,7 @@
                     <div class="medium-6 columns">
                         <label>
                             URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
-                            <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
+                            <input type="text" placeholder="https://foundation.zurb.com" pattern="url">
                         </label>
                     </div>
                     <div class="medium-6 columns">
@@ -558,7 +558,7 @@
             <h2 id="media-object" class="docs-heading" data-magellan-target="media-object"><a href="#media-object"></a>Media Object</h2>
             <div class="media-object">
                 <div class="media-object-section">
-                    <img src= "http://placeimg.com/200/200/people">
+                    <img src= "https://placeimg.com/200/200/people">
                 </div>
                 <div class="media-object-section">
                     <h4>Dreams feel real while we're in them.</h4>
@@ -678,11 +678,11 @@
             </div>
 
             <br /><br />
-            <p><strong>Native progress:</strong> As an alternative to our custom progress bar style, you can also opt to use the native <code>&lt;progress&gt;</code> element. It provides a more succinct way to create progress bars, but it's not supported in IE9, and some other older browsers. <a href="http://caniuse.com/#feat=progress">View <code>&lt;progress&gt;</code> element support.</a></p>
+            <p><strong>Native progress:</strong> As an alternative to our custom progress bar style, you can also opt to use the native <code>&lt;progress&gt;</code> element. It provides a more succinct way to create progress bars, but it's not supported in IE9, and some other older browsers. <a href="https://caniuse.com/#feat=progress">View <code>&lt;progress&gt;</code> element support.</a></p>
             <progress max="100" value="75"></progress>
 
             <br /><br />
-            <p><strong>Native meter:</strong> For the <em>extra</em> adventurous developers out there, we also provide styles for the <code>&lt;meter&gt;</code> element. What's the difference? <code>&lt;progress&gt;</code> represents a value that changes over time, like storage capacity. <code>&lt;meter&gt;</code> represents a value that fluctates around some optimum value. It also has <em>no</em> support in Internet Explorer, Mobile Safari, or Android 2. <a href="http://caniuse.com/#search=meter">View <code>&lt;meter&gt;</code> element support.</a></p>
+            <p><strong>Native meter:</strong> For the <em>extra</em> adventurous developers out there, we also provide styles for the <code>&lt;meter&gt;</code> element. What's the difference? <code>&lt;progress&gt;</code> represents a value that changes over time, like storage capacity. <code>&lt;meter&gt;</code> represents a value that fluctates around some optimum value. It also has <em>no</em> support in Internet Explorer, Mobile Safari, or Android 2. <a href="https://caniuse.com/#search=meter">View <code>&lt;meter&gt;</code> element support.</a></p>
             <meter value="30" min="0" low="33" high="66" optimum="100" max="100"></meter>
             <meter value="50" min="0" low="33" high="66" optimum="100" max="100"></meter>
             <meter value="100" min="0" low="33" high="66" optimum="100" max="100"></meter>
@@ -727,7 +727,7 @@
                 <input type="hidden">
             </div>
             <br /><br />
-            <p><strong>Native range slider:</strong> In Foundation 6.2, we introduced styles for <code>&lt;input type="range"&gt;</code>, the native HTML element for range sliders. It's not supported in every browser, namely IE9 and some older mobile browsers. <a href="http://caniuse.com/#feat=input-range">View browser support for the range input type.</a></p>
+            <p><strong>Native range slider:</strong> In Foundation 6.2, we introduced styles for <code>&lt;input type="range"&gt;</code>, the native HTML element for range sliders. It's not supported in every browser, namely IE9 and some older mobile browsers. <a href="https://caniuse.com/#feat=input-range">View browser support for the range input type.</a></p>
             <input type="range" min="1" max="100" step="1">
             <hr>
 
@@ -808,7 +808,7 @@
                 </div>
                 <div class="tabs-panel" id="panel2">
                     <p>Two</p>
-                    <img class="thumbnail" src="http://placeimg.com/200/200/arch">
+                    <img class="thumbnail" src="https://placeimg.com/200/200/arch">
                 </div>
                 <div class="tabs-panel" id="panel3">
                     <p>Three</p>
@@ -816,7 +816,7 @@
                 </div>
                 <div class="tabs-panel" id="panel4">
                     <p>Four</p>
-                    <img class="thumbnail" src="http://placeimg.com/200/200/arch">
+                    <img class="thumbnail" src="https://placeimg.com/200/200/arch">
                 </div>
                 <div class="tabs-panel" id="panel5">
                     <p>Five</p>
@@ -824,7 +824,7 @@
                 </div>
                 <div class="tabs-panel" id="panel6">
                     <p>Six</p>
-                    <img class="thumbnail" src="http://placeimg.com/200/200/arch">
+                    <img class="thumbnail" src="https://placeimg.com/200/200/arch">
                 </div>
             </div>
             <hr>
@@ -833,13 +833,13 @@
             <h2 id="thumbnail" class="docs-heading" data-magellan-target="thumbnail"><a href="#thumbnail"></a>Thumbnail</h2>
                 <div class="row">
                     <div class="small-4 columns">
-                        <img class="thumbnail" src="http://placeimg.com/200/200/nature" alt="Placeholder image.">
+                        <img class="thumbnail" src="https://placeimg.com/200/200/nature" alt="Placeholder image.">
                     </div>
                     <div class="small-4 columns">
-                        <img class="thumbnail" src="http://placeimg.com/200/200/nature" alt="Placeholder image.">
+                        <img class="thumbnail" src="https://placeimg.com/200/200/nature" alt="Placeholder image.">
                     </div>
                     <div class="small-4 columns">
-                        <img class="thumbnail" src="http://placeimg.com/200/200/nature" alt="Placeholder image.">
+                        <img class="thumbnail" src="https://placeimg.com/200/200/nature" alt="Placeholder image.">
                     </div>
                 </div>
             <hr>
