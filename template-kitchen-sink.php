@@ -15,7 +15,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area full-width">
-		<main id="main" class="site-main">
+		<main id="main" class="main-wrap"><?php // class was site-main ?>
 
 		<?php
 		while ( have_posts() ) :
